@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yenny Alexandra | Experience</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <canvas id="starfield"></canvas>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/index.html" class="nav-brand">Yenny Alexandra</a>
+      <div class="nav-links">
+        <a href="/index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="/skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="/proyectos.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="/experiencia.html" class="nav-link active" data-i18n="nav.experience">Experience</a>
+        <a href="/contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-4" style="margin-left: 2rem; margin-right: 1rem;">
+        <button id="theme-toggle" class="btn-icon" style="width: 2.5rem; height: 2.5rem;"><span class="material-symbols-outlined" style="font-size: 1.2rem;">light_mode</span></button>
+        <button id="lang-toggle" class="btn-icon" style="width: 2.5rem; height: 2.5rem; font-weight: 700; font-size: 0.8rem;">ES</button>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="/index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="/skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+      <a href="/proyectos.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+      <a href="/experiencia.html" class="nav-link active" data-i18n="nav.experience">Experience</a>
+      <a href="/contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container animate-fade-up">
+    <header class="mb-8">
+      <h1 class="hero-title" style="font-size: 2.5rem;" data-i18n="exp.title">Trayectoria</h1>
+      <p class="text-muted" style="max-width: 600px; font-size: 1.1rem;" data-i18n="exp.desc">Un viaje a través del desarrollo profesional y la formación técnica, constelando experiencias clave que definen mi perfil como Full Stack Developer.</p>
+    </header>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <section>
+        <h2 class="mb-8 flex items-center gap-2" style="color: var(--accent-comet);"><span class="material-symbols-outlined">work</span> <span data-i18n="exp.prof">Experiencia Profesional</span></h2>
+        <div class="timeline">
+          <div class="timeline-item glass-panel p-6">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
+              <h3 style="font-size: 1.2rem; color: var(--text-light);">Onelink</h3>
+              <span class="chip chip-comet" style="font-size: 0.7rem;">Agente de Servicio al Cliente</span>
+            </div>
+            <p class="text-muted mb-4" style="font-size: 0.9rem;" data-i18n="exp.onelink.desc">Desarrollo de habilidades blandas, resolución de problemas bajo presión y atención al detalle en entornos dinámicos, estableciendo una base sólida para la comunicación efectiva en equipos técnicos.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Comunicación</span>
+              <span class="chip">Resolución de Problemas</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item glass-panel p-6">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
+              <h3 style="font-size: 1.2rem; color: var(--text-light);">Henkel Colombiana</h3>
+              <span class="chip chip-comet" style="font-size: 0.7rem;">Mercaderista</span>
+            </div>
+            <p class="text-muted mb-4" style="font-size: 0.9rem;" data-i18n="exp.henkel.desc">Gestión de estrategias comerciales, análisis de datos en punto de venta y optimización de procesos operativos, aportando visión analítica aplicable al desarrollo de productos digitales.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Análisis</span>
+              <span class="chip">Gestión</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="mb-8 flex items-center gap-2" style="color: var(--accent-sunset);"><span class="material-symbols-outlined">school</span> <span data-i18n="exp.edu">Educación Continua</span></h2>
+        <div class="timeline">
+          <div class="timeline-item glass-panel p-6">
+            <div class="timeline-dot" style="background: var(--accent-sunset); box-shadow: 0 0 10px var(--accent-sunset);"></div>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
+              <h3 style="font-size: 1.2rem; color: var(--text-light);">Laboratoria</h3>
+              <span class="chip chip-sunset" style="font-size: 0.7rem;">Bootcamp Intensivo</span>
+            </div>
+            <p class="text-muted mb-4" style="font-size: 0.9rem;" data-i18n="exp.lab.desc">Formación inmersiva en desarrollo web front-end. Construcción de aplicaciones interactivas, consumo de APIs y metodologías ágiles bajo un enfoque de aprendizaje continuo y colaborativo.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Agile</span>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-panel p-6">
+            <div class="timeline-dot" style="background: var(--accent-sunset); box-shadow: 0 0 10px var(--accent-sunset);"></div>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
+              <h3 style="font-size: 1.2rem; color: var(--text-light);">Generation Colombia</h3>
+              <span class="chip chip-sunset" style="font-size: 0.7rem;">Desarrollo Java Full Stack</span>
+            </div>
+            <p class="text-muted mb-4" style="font-size: 0.9rem;" data-i18n="exp.gen.desc">Especialización en tecnologías back-end y front-end. Diseño de bases de datos, creación de APIs RESTful con Spring Boot y desarrollo de interfaces con Angular.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Java</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Angular</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item glass-panel p-6">
+            <div class="timeline-dot" style="background: var(--accent-sunset); box-shadow: 0 0 10px var(--accent-sunset);"></div>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
+              <h3 style="font-size: 1.2rem; color: var(--text-light);">SENA</h3>
+              <span class="chip chip-sunset" style="font-size: 0.7rem;">Tecnólogo</span>
+            </div>
+            <p class="text-muted mb-4" style="font-size: 0.9rem;" data-i18n="exp.sena.desc">Fundamentos sólidos en análisis y desarrollo de sistemas de información. Bases de ingeniería de software, modelado de datos y fundamentos de programación estructurada.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">SQL</span>
+              <span class="chip">UML</span>
+              <span class="chip">Lógica</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div style="font-weight: 700; font-size: 1.2rem; color: var(--accent-comet);">Yenny Alexandra</div>
+      <div class="flex gap-4">
+        <a href="#" class="text-muted">GitHub</a>
+        <a href="#" class="text-muted">LinkedIn</a>
+        <a href="#" class="text-muted">Email</a>
+      </div>
+      <p class="text-muted" style="font-size: 0.8rem;" data-i18n="footer.desc">© 2026 Yenny Alexandra Castro Manjarrez. Designed with magic.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
