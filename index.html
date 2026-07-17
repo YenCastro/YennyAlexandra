@@ -1,103 +1,417 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yenny Alexandra | Inicio</title>
-  <link rel="stylesheet" href="/src/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Castro | Desarrolladora Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="img/option.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="gradient-bg"></div>
-  <canvas id="starfield"></canvas>
-
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="/index.html" class="nav-brand">Yenny Alexandra</a>
-      <div class="nav-links">
-        <a href="/index.html" class="nav-link active" data-i18n="nav.home">Home</a>
-        <a href="/skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
-        <a href="/proyectos.html" class="nav-link" data-i18n="nav.projects">Projects</a>
-        <a href="/experiencia.html" class="nav-link" data-i18n="nav.experience">Experience</a>
-        <a href="/contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-      </div>
-      <div class="flex items-center gap-4" style="margin-left: 2rem; margin-right: 1rem;">
-        <button id="theme-toggle" class="btn-icon" style="width: 2.5rem; height: 2.5rem;"><span class="material-symbols-outlined" style="font-size: 1.2rem;">light_mode</span></button>
-        <button id="lang-toggle" class="btn-icon" style="width: 2.5rem; height: 2.5rem; font-weight: 700; font-size: 0.8rem;">ES</button>
-      </div>
-      <button id="mobile-menu-btn" class="mobile-menu-btn">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </div>
-    <div id="mobile-menu" class="mobile-menu">
-      <a href="/index.html" class="nav-link active" data-i18n="nav.home">Home</a>
-      <a href="/skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
-      <a href="/proyectos.html" class="nav-link" data-i18n="nav.projects">Projects</a>
-      <a href="/experiencia.html" class="nav-link" data-i18n="nav.experience">Experience</a>
-      <a href="/contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-    </div>
-  </nav>
-
-  <main class="container">
-    <section class="flex flex-col md:flex-row items-center justify-between gap-8 animate-fade-up">
-      <div style="flex: 1; max-width: 600px;">
-        <div class="chip chip-comet mb-4">
-          <span class="material-symbols-outlined" style="font-size: 14px; vertical-align: middle;">code</span> <span data-i18n="hero.subtitle">Full Stack Developer</span>
+    <header class="encabezado">
+        <div class="contenedor">
+            <a href="#inicio" class="logo">AC.</a>
+            <nav class="barra-navegacion">
+                <ul class="enlaces-navegacion">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="boton-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <h1 class="hero-title">
-          <span data-i18n="hero.title1">Construyendo puentes entre el</span> <br>
-          <span class="text-gradient" data-i18n="hero.title2">Diseño y el Código</span>
-        </h1>
-        <p class="text-muted mb-8" style="font-size: 1.1rem; line-height: 1.6;" data-i18n="hero.desc">
-          Desarrolladora apasionada por crear experiencias web inmersivas y arquitecturas robustas. Transformando ideas complejas en soluciones elegantes, con un toque de magia estelar.
-        </p>
-        <div class="flex gap-4" style="flex-wrap: wrap;">
-          <a href="/proyectos.html" class="btn btn-primary">
-            <span data-i18n="hero.btn.projects">Ver Proyectos</span> <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <a href="/contacto.html" class="btn btn-outline" data-i18n="hero.btn.contact">
-            Contáctame
-          </a>
+    </header>
+    <main>
+
+        <!-- =========================== Inicio ==================================0-->
+        <section id="inicio">
+            <div id="particulas-hero"></div>
+            <div class="contenedor">
+                <div class="contenido-inicio">
+                    <span>Desarrolladora Full-Stack</span>
+                    <p class="saludo-inicio">
+                        Hola, soy
+                    </p>
+                    <h1>
+                        Alexandra <br> Castro
+                    </h1>
+                    <p class="descripcion-inicio">
+                        Desarrollo aplicaciones web enfocadas en la usabilidad, combinando la lógica técnica con
+                        interfaces visualmente atractivas y accesibles.
+                    </p>
+                    <div class="botones-inicio">
+                        <a href="#proyectos" class="boton-primario">
+                            Ver proyectos
+                        </a>
+                        <a href="documentos/CV-YennyCastro.pdf" target="_blank" class="boton-secundario">
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+                <figure class="imagen-inicio">
+                    <div class="tarjeta-fotografia">
+                        <img src="img/option.png" alt="Fotografía de Yenny Castro">
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ===================================== Sobre mí =====================================-->
+        <section id="sobre-mi">
+            <div class="contenedor grid-sobre-mi">
+
+                <!-- Columna Izquierda: Títulos y Datos Clave -->
+                <div class="columna-titulo" data-reveal>
+                    <span class="numero-seccion">01</span>
+                    <h2>Sobre mí</h2>
+
+                    <!-- Datos clave resumidos de tu CV -->
+                    <div class="destacados-perfil" data-reveal="stagger">
+                        <div class="destacado-item">
+                            <span class="destacado-punto">✦</span>
+                            <div>
+                                <h4> Lógica Transaccional & Fintech </h4>
+                                <p>Comprensión de flujos de pago digitales y conciliación transaccional gracias a mi
+                                    experiencia directa dando soporte a operaciones de Mercado Pago.</p>
+                            </div>
+                        </div>
+                        <div class="destacado-item">
+                            <span class="destacado-punto">✦</span>
+                            <div>
+                                <h4>Análisis y Resolución</h4>
+                                <p>Mi experiencia en atención al cliente y desarrollo de software me ha permitido
+                                    fortalecer la resolución de problemas, el análisis de necesidades y la búsqueda de
+                                    soluciones prácticas.</p>
+                            </div>
+                        </div>
+                        <div class="destacado-item">
+                            <span class="destacado-punto">✦</span>
+                            <div>
+                                <h4>Comunicación y Aprendizaje Continuo</h4>
+                                <p>Tengo un nivel de inglés B2 que me permite consultar documentación técnica y aprender
+                                    nuevas tecnologías. Me adapto con facilidad al trabajo colaborativo y a metodologías
+                                    ágiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Tu Historia / Storytelling -->
+                <div class="columna-texto" data-reveal>
+                    <p class="parrafo-destacado">
+                        Hoy sé que cada experiencia en mi camino profesional me acercó al desarrollo web, donde encontré
+                        la oportunidad de combinar creatividad, tecnología y resolución de problemas.
+                    </p>
+
+                    <p>
+                        Actualmente estudio Análisis y Desarrollo de Software en el SENA y continúo fortaleciendo mis
+                        conocimientos con Generation Colombia, construyendo aplicaciones web modernas con
+                        tecnologías actuales.
+                    </p>
+
+                    <a href="#cv" class="enlace-texto">
+                        Ver currículum completo <span class="flecha">→</span>
+                    </a>
+                </div>
+        </section>
+
+        <!-- ==================== Habilidades ============================ -->
+        <section id="habilidades">
+            <div class="contenedor">
+                <span class="numero-seccion">02</span>
+                <h2>Habilidades</h2>
+                <p class="descripcion-seccion">
+                    Estas son algunas de las tecnologías y habilidades que he desarrollado
+                    durante mi formación y experiencia en proyectos personales y colaborativos.
+                </p>
+
+                <!-- Habilidades Técnicas -->
+                <div class="bloque-habilidades" data-reveal>
+                    <h3 class="titulo-bloque">Habilidades Técnicas</h3>
+                    
+
+                    <div class="chips-herramientas">
+                        <span class="chip-herramienta">Bootstrap</span>
+                        <span class="chip-herramienta">VS Code</span>
+                        <span class="chip-herramienta">SCRUM</span>
+                        <span class="chip-herramienta">Figma</span>
+                        <span class="chip-herramienta">Java</span>
+                        <span class="chip-herramienta">JavaScript</span>
+                        <span class="chip-herramienta">CSS</span>
+                        <span class="chip-herramienta">HTML</span>
+                        <span class="chip-herramienta">Spring Boot</span>
+                        <span class="chip-herramienta">MySQL</span>
+                        <span class="chip-herramienta">Git</span>
+                        <span class="chip-herramienta">GitHub</span>
+                        <span class="chip-herramienta">IntelliJ</span>
+                        <span class="chip-herramienta">phpMyAdmin</span>
+                    </div>
+                </div>
+
+                <!-- Habilidades Blandas -->
+                <div class="bloque-habilidades" data-reveal="stagger">
+                    <h3 class="titulo-bloque">Habilidades Blandas</h3>
+                    <div class="grid-blandas">
+                        <div class="habilidad-blanda">
+                            <span class="habilidad-blanda-icono">◈</span>
+                            <h4>Resolución de problemas</h4>
+                            <p>Orientación práctica para diagnosticar y solucionar necesidades técnicas y de negocio.
+                            </p>
+                        </div>
+                        <div class="habilidad-blanda">
+                            <span class="habilidad-blanda-icono">◈</span>
+                            <h4>Trabajo en equipo</h4>
+                            <p>Experiencia colaborando bajo metodologías ágiles como SCRUM en proyectos
+                                multidisciplinarios.</p>
+                        </div>
+                        <div class="habilidad-blanda">
+                            <span class="habilidad-blanda-icono">◈</span>
+                            <h4>Adaptabilidad</h4>
+                            <p>Capacidad de aprendizaje continuo y ajuste rápido a nuevas tecnologías y entornos.</p>
+                        </div>
+                        <div class="habilidad-blanda">
+                            <span class="habilidad-blanda-icono">◈</span>
+                            <h4>Comunicación efectiva</h4>
+                            <p>Atención al cliente y manejo claro de información en entornos exigentes y
+                                multiculturales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROYECTOS DESTACADOS ================= -->
+        <section id="proyectos">
+            <div class="contenedor">
+                <span class="numero-seccion">03</span>
+                <h2>Proyectos destacados</h2>
+                <p class="descripcion-seccion">
+                    Estos son algunos de los proyectos que mejor representan mi
+                    crecimiento como desarrolladora, desde aplicaciones web hasta
+                    proyectos construidos con Java y diseño de interfaces.
+                </p>
+                <div class="cuadricula-proyectos">
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="img/kumo.png" alt="KUMO">
+                        </div>
+                        <div class="informacion-proyecto">
+                            <span class="categoria-proyecto">
+                                UI / Front-End
+                            </span>
+                            <h3>KUMO</h3>
+                            <p>
+                                Tienda virtual inspirada en la cultura anime,
+                                enfocada en una experiencia visual elegante,
+                                intuitiva y moderna.
+                            </p>
+                            <div class="enlaces-proyecto">
+                                <a href="https://github.com/Nachht/Kumo.git" target="_blank" class="enlace-proyecto"
+                                    aria-label="Ver código en GitHub">
+                                    <span class="icono-enlace">◪</span> Código
+                                </a>
+                                <a href="https://kumo-demo.vercel.app" target="_blank" class="enlace-proyecto"
+                                    aria-label="Ver demo en vivo">
+                                    <span class="icono-enlace">↗</span> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="img/animestart.png" alt="AnimeStart">
+                        </div>
+                        <div class="informacion-proyecto">
+                            <span class="categoria-proyecto">
+                                Proyecto colaborativo
+                            </span>
+                            <h3>AnimeStart</h3>
+                            <p>
+                                Aplicación web desarrollada bajo metodología SCRUM,
+                                donde participé en la construcción del Front-End
+                                y la interfaz de usuario.
+                            </p>
+                            <div class="enlaces-proyecto">
+                                <a href="https://github.com/Nachht/AnimeStart" target="_blank" class="enlace-proyecto"
+                                    aria-label="Ver código en GitHub">
+                                    <span class="icono-enlace">◪</span> Código
+                                </a>
+                                <a href="https://animestart.pages.dev/" target="_blank" class="enlace-proyecto"
+                                    aria-label="Ver demo en vivo">
+                                    <span class="icono-enlace">↗</span> Demo
+                                </a>
+                            </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="img/nasa.png" alt="NASA API Explorer">
+                        </div>
+                        <div class="informacion-proyecto">
+                            <span class="categoria-proyecto"> API REST </span>
+                            <h3>NASA API Explorer</h3>
+                            <p>
+                                Aplicación web que integra la API pública de la NASA para visualizar contenido espacial
+                                en tiempo real, aplicando consumo de APIs REST, manipulación del DOM y peticiones
+                                asíncronas con JavaScript.
+                            </p>
+                            <div class="enlaces-proyecto">
+                                <a href="https://github.com/Camilo-Sanchez144/LAB_Using_NASA_API.git" target="_blank"
+                                    class="enlace-proyecto" aria-label="Ver código en GitHub">
+                                    <span class="icono-enlace">◪</span> Código
+                                </a>
+                                <a href="https://lab-using-nasa-api.pages.dev/" target="_blank" class="enlace-proyecto"
+                                    aria-label="Ver demo en vivo">
+                                    <span class="icono-enlace">↗</span> Demo
+                                </a>
+                            </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto">
+                            <img src="img/trendyshop.png" alt="Trendy Shop">
+                        </div>
+                        <div class="informacion-proyecto">
+                            <span class="categoria-proyecto"> Hackathon </span>
+                            <h3>Trendy Shop</h3>
+                            <p>
+                                Plataforma de comercio electrónico desarrollada durante una hackathon, donde colaboré en
+                                el desarrollo del Front-End y la construcción de una interfaz moderna, responsiva y
+                                centrada en la experiencia del usuario, trabajando en equipo con Git y GitHub.
+                            </p>
+                            <div class="enlaces-proyecto">
+                                <a href="https://github.com/Raydan08x/trendy-shop.git" target="_blank"
+                                    class="enlace-proyecto" aria-label="Ver código en GitHub">
+                                    <span class="icono-enlace">◪</span> Código
+                                </a>
+                                <a href="https://trendy-shop.castroyenny74.workers.dev" target="_blank"
+                                    class="enlace-proyecto" aria-label="Ver demo en vivo">
+                                    <span class="icono-enlace">↗</span> Demo
+                                </a>
+                            </div>
+                    </article>
+
+                </div>
+                <div class="contenedor-boton-proyectos">
+                    <a href="https://github.com/YenCastro?tab=repositories" class="boton-primario" target="_blank"
+                        rel="noopener noreferrer">
+                        Ver todos los proyectos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CV ================= -->
+        <section id="cv">
+            <div class="contenedor">
+                <span class="numero-seccion">04</span>
+                <h2>Currículum</h2>
+                <p class="descripcion-seccion">
+                    Conoce más sobre mi formación académica, experiencia,
+                    certificaciones y habilidades profesionales.
+                </p>
+                <div class="botones-inicio">
+                    <a href="documentos/CV-YennyCastro.pdf" target="_blank" class="boton-primario">
+                        Ver CV
+                    </a>
+                    <a href="documentos/CV-YennyCastro.pdf" download class="boton-secundario">
+                        Descargar CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto">
+            <div class="contenedor grid-contacto">
+
+                <!-- Columna Izquierda -->
+                <div class="contacto-info" data-reveal>
+                    <span class="numero-seccion">05</span>
+                    <h2>Hablemos.</h2>
+                    <p class="contacto-subtitulo">
+                        ¿Tienes un proyecto o una oportunidad en mente? Escríbeme y te responderé pronto.
+                    </p>
+
+                    <div class="contacto-detalle">
+                        <div class="detalle-item">
+                            <span class="detalle-label">Email</span>
+                            <a href="mailto:castroyenny74@gmail.com">castroyenny74@gmail.com</a>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Ubicación</span>
+                            <span>Bogotá D.C, Colombia</span>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociales">
+                        <a href="https://linkedin.com/in/alexandra-castro-web-developer" class="red-social"
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/YenCastro" class="red-social" aria-label="GitHub" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Columna Derecha: Formulario -->
+                <form class="tarjeta-formulario" id="formulario-contacto" action="https://formspree.io/f/xeeyagjl"
+                    method="POST" data-reveal>
+
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="name" placeholder="Escribe tu nombre" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="message" rows="4"
+                            placeholder="Cuéntame sobre tu proyecto u oportunidad" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar" id="btnEnviar">
+                        Enviar mensaje
+                    </button>
+
+                    <p id="mensajeFormulario"></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer>
+        <div class="contenedor">
+            <p>© 2026 · Alexandra Castro</p>
         </div>
-      </div>
-      <div style="flex: 1; display: flex; justify-content: center; position: relative;">
-        <!-- Abstract Decoration -->
-        <div class="glass-panel" style="width: 300px; height: 300px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-          <div style="position: absolute; width: 100%; height: 100%; border: 2px dashed rgba(255,42,133,0.3); border-radius: 50%; animation: spin 20s linear infinite;"></div>
-          <div style="width: 150px; height: 150px; background: linear-gradient(45deg, var(--accent-comet), var(--accent-sunset)); border-radius: 50%; box-shadow: 0 0 50px rgba(255,42,133,0.5); display: flex; align-items: center; justify-content: center;">
-            <span class="material-symbols-outlined" style="font-size: 4rem; color: #fff;">code</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-8 pt-8 animate-fade-up" style="border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
-      <p class="text-muted mb-6" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;" data-i18n="tech.title">Tecnologías Principales</p>
-      <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
-        <div class="glass-panel" style="padding: 0.5rem 1rem; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="bi bi-filetype-java" style="font-size: 1.2rem; color: #f89820;"></i> Java</div>
-        <div class="glass-panel" style="padding: 0.5rem 1rem; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="bi bi-filetype-js" style="font-size: 1.2rem; color: #f7df1e;"></i> JavaScript</div>
-        <div class="glass-panel" style="padding: 0.5rem 1rem; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="bi bi-filetype-sql" style="font-size: 1.2rem; color: #336791;"></i> SQL</div>
-        <div class="glass-panel" style="padding: 0.5rem 1rem; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="bi bi-filetype-html" style="font-size: 1.2rem; color: #e34f26;"></i> HTML/CSS</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-container">
-      <div style="font-weight: 700; font-size: 1.2rem; color: var(--accent-comet);">Yenny Alexandra</div>
-      <div class="flex gap-4">
-        <a href="#" class="text-muted">GitHub</a>
-        <a href="#" class="text-muted">LinkedIn</a>
-        <a href="#" class="text-muted">Email</a>
-      </div>
-      <p class="text-muted" style="font-size: 0.8rem;" data-i18n="footer.desc">© 2026 Yenny Alexandra Castro Manjarrez. Designed with magic.</p>
-    </div>
-  </footer>
-
-  <style>
-    @keyframes spin { 100% { transform: rotate(360deg); } }
-  </style>
-  <script type="module" src="/src/main.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
