@@ -478,21 +478,6 @@ p {
     transform:translateX(6px);
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width:900px){
-    .grid-sobre-mi{
-        grid-template-columns:1fr;
-        gap:60px;
-    }
-
-    .columna-titulo{
-        position:static;
-    }
-
-    .parrafo-destacado{
-        font-size:1.4rem;
-    }
-}
 
 
 /*==========================         HABILIDADES            ===========================*/
@@ -1118,3 +1103,20 @@ footer p {
     font-weight:600;
     min-height:24px;
 }
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+    .grid-sobre-mi{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .columna-titulo{
+        position:static;
+    }
+
+    .parrafo-destacado{
+        font-size:1.4rem;
+    }
+}
+
